@@ -1,8 +1,15 @@
 # Git
+- GUI
+  - 소스트리
+    |명령|가이드|
+    |:---|:---|
+    |commit|[링크](./study/sourcetree/commit.md)|
+<br>
+
 - 개념 정리
 
     |개념|명령어|설명|
-    |:---:|:---|:---|
+    |:---|:---|:---|
     |add|```git add 파일명```|변경된 파일을 ***스테이징 영역***에 추가<br>※ ***스테이징 영역*** : 커밋으로 확정 짓기 전 변경사항을 임시로 모아두는 곳|
     |commit|[기본]<br>```git commit -m "커밋 메시지"```<hr>[메시지 여러 줄 이력]<br>```git commit -m "커밋 메시지" -m "커밋 메시지"```<hr>[add (tracked & modified 파일 전체) + commit]<br>```git commit -a -m "커밋 메시지"```<hr>[add (tracked & modified 파일 선택) + commit]<br>```git commit -p -m "커밋 메시지"```<hr>[마지막 커밋을 날리고 새로운 커밋]<br>```git commit --amend -m "커밋 메시지"```<hr>[author 정보 변경하여 커밋]```git commit --author="이름 <이메일>" -m "커밋 메시지"```|스테이징 영역에 추가된 변경사항을 실제로 저장소에 기록<br>※ Commit은 단순히 파일의 변경사항을 기록하는 것 이상의 의미를 가짐<br>&emsp;프로젝트의 ***히스토리***를 만들어가는 과정이며 팀원 간의 ***소통 수단***이 됨|
     |checkout|[특정 브랜치로 전환]<br>```git checkout 브랜치명```<hr>[특정 브랜치 생성 후 바로 전환]<br>```git checkout -b 브랜치명```<hr>[특정 베이스 브랜치에서 파생 브랜치를 생성 후 바로 전환]<br>```git checkout -b 브랜치명 베이스브랜치명```<hr>[모든 변경사항 취소]<br>```git checkout .```<hr>[변경사항 커밋 전으로 복원]<br>```git checkout -- 파일명```<hr>[특정 커밋 버전으로 전환]<br>```git checkout 커밋해시값```|* 브랜치 또는 커밋을 전환함 (switch)<br>* 내용 되돌리기 (restore)|
