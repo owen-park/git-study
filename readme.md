@@ -1,10 +1,10 @@
 # Git
 - GUI
   - 소스트리
-    |명령|가이드|
+    |작업|가이드|
     |:---|:---|
-    |commit|[링크](./study/sourcetree/commit.md)|
-    |||
+    |add -> commit -> check history -> push|[링크](./study/sourcetree/commit.md)|
+    |pull & fetch|[링크](./study/sourcetree/pull-fetch.md)|
 <br>
 
 - 개념 정리
